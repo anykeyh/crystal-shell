@@ -9,6 +9,7 @@
 ## Installation
 
 ```bash
+\curl -sSL https://raw.githubusercontent.com/anykeyh/crystal-shell/master/install.sh | bash -s stable
 ```
 
 ## Maintenance
