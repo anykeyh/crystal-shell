@@ -1,3 +1,7 @@
+For those who want to use Crystal as shell-script language. This utility
+install a binary called `crystal_shell` which automatically compile your
+script in a cache directory and call it back the next time you call it.
+
 # Crystal Shell
 
 1. During installation, will add `crystal_shell` binary into `/usr/local/bin`
@@ -17,7 +21,7 @@
 Compiled binary version are stored in `~/.cache/crystal_shell` directory
 
 - You can delete the files there by calling `crystal_shell --prune`
-- You may want to ~break my heart~ remove the binary by calling `crystall_shell --uninstall`
+- You may want to ~break my heart~ remove the binary by calling `crystal_shell --uninstall`
 
 ## Example
 
