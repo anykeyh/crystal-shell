@@ -1,10 +1,10 @@
 # Crystal Shell
 
-1. Add `crystal_shell` binary into `/usr/local/bin`
-2. Create shell script adding shebang `#!/usr/bin/env crystal_shell` and `chmod +x` your file
-3. Call your script.
-4. Slow the first call, but automatically compile in background with `--release` flags
-5. Wow, blazing the second call as it's compiled (-:
+1. During installation, will add `crystal_shell` binary into `/usr/local/bin`
+2. Create shell script adding shebang `#!/usr/bin/env crystal_shell` and `chmod +x` any file you want.
+3. Write your crystal script. Call your script through terminal.
+4. It's slow the first call, but it automatically compile in background with `--release` flags
+5. Wow, blazing after few seconds as it's compiled (-:
 
 ## Installation
 

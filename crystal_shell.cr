@@ -35,11 +35,13 @@ def execute_target(filename)
       begin
         File.touch(lock)
         File.new(lock).flock_exclusive do
-          Process.run \
-            command: "crystal",
-            args: ["build", filename, "--release", "--no-debug", "-o", cache_file],
-            shell: false,
-            chdir: PWD
+          unless File.exists?(filename) #< In case of multiple call at once, we discard after first compilation.
+            Process.run \
+              command: "crystal",
+              args: ["build", filename, "--release", "--no-debug", "-o", cache_file],
+              shell: false,
+              chdir: PWD
+          end
         end
       ensure
         File.delete(lock)
